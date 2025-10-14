@@ -1,0 +1,361 @@
+/* ================== RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* ================== TOP BAR ================== */
+.topbar {
+  background: #f57c00;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 40px;
+}
+
+.topbar .left, .topbar .right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.topbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.topbar a:hover {
+  text-decoration: underline;
+}
+
+/* ================== HEADER ================== */
+header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo div {
+  width: 50px;
+  height: 50px;
+  background: #fff5e6;
+  border: 2px dashed #f57c00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: #999;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 24px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #f57c00;
+}
+
+/* ================== SECTIONS ================== */
+section {
+  padding: 80px 40px;
+}
+
+section:nth-child(even) {
+  background: #fff5e6;
+}
+
+.section-title {
+  color: #f57c00;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+/* ================== HERO ================== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  flex: 1 1 45%;
+}
+
+.hero-text h1 {
+  color: #f57c00;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.hero-img {
+  flex: 1 1 45%;
+  background: #f3f3f3;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
+
+/* ================== GRID BOXES ================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .img-box {
+  background: #f3f3f3;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
+
+.card .content {
+  padding: 15px;
+}
+
+.card h3 {
+  color: #f57c00;
+  margin-bottom: 8px;
+}
+
+/* ================== CONTACT ================== */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1 1 40%;
+  line-height: 1.8;
+}
+
+.contact-form {
+  flex: 1 1 50%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #f57c00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #e56f00;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-img {
+    margin-top: 20px;
+  }
+  .contact {
+    flex-direction: column;
+  }
+}
+
+/* =========== GIÁO VIÊN SLIDER =========== */
+.teacher-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.teacher-wrapper {
+  overflow: hidden;
+}
+
+.teacher-slide {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.teacher-card {
+  flex: 0 0 32%;
+  margin: 0 1%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.teacher-card h3 {
+  color: #f57c00;
+  margin-top: 10px;
+}
+
+.teacher-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: #f57c00;
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.teacher-btn:hover {
+  opacity: 1;
+}
+
+.teacher-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f57c00;
+  color: #fff;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  opacity: 0.9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.teacher-btn:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* vị trí ra ngoài 1 chút để không bị che */
+.teacher-btn.prev {
+  left: -25px;
+}
+
+.teacher-btn.next {
+  right: -25px;
+}
+
+
+@media (max-width: 768px) {
+  .teacher-card {
+    flex: 0 0 100%;
+    margin: 0 5px;
+  }
+}
+
+/* =========== HỌC PHÍ CARDS =========== */
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.price-card {
+  background: #fff;
+  border: 2px solid #ffe5c2;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.price-card h3 {
+  color: #f57c00;
+  margin-bottom: 8px;
+}
+
+.price-card ul {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.price-card ul li::before {
+  content: "• ";
+  color: #f57c00;
+}
+
