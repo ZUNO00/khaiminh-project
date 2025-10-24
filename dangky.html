@@ -207,7 +207,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Gán dữ liệu vào form
-  document.getElementById('courseName').value = mapCourseName[courseKey] || '';
+ // Nếu truyền là key (toan/kynang/hohoa/amnhac) thì đổi sang tên đầy đủ
+// Nếu truyền là tên tiếng Việt, thì giữ nguyên
+document.getElementById('courseName').value =
+  mapCourseName[courseKey] || decodeURIComponent(courseKey) || '';
+
   document.getElementById('age').value = age || '';
   document.getElementById('schedule').value = schedule || '';
   document.getElementById('fee').value = fee || '';
