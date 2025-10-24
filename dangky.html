@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Đăng ký học | Trung tâm Khai Minh</title>
-        <link rel="stylesheet" href="style.css" />
-        <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký học | Trung tâm Khai Minh</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
     body {
       background: #fffaf4;
+      font-family: Arial, sans-serif;
     }
 
     .register-section {
@@ -92,8 +93,8 @@
     header .logo div {
       width: 50px;
       height: 50px;
-      background: #fff5e6;
-      border: 2px dashed #f57c00;
+      /* background: #fff5e6; */
+      /* border: 2px dashed #f57c00; */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -106,62 +107,111 @@
       color: #333;
       font-weight: 500;
     }
+
+    .course-info-box {
+      margin-top: 15px;
+      padding: 15px;
+      background: #fffaf2;
+      border: 1px solid #fcd4a3;
+      border-radius: 8px;
+      line-height: 1.5;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .course-info-box h4 {
+      color: #f57c00;
+      margin-bottom: 8px;
+    }
   </style>
-    </head>
-    <body>
+  </head>
+  <body>
 
-        <header>
-            <div class="logo">
-                <div><img src="logo.jpg" alt="logo" style="width: 40px;"></div>
-                Trung tâm Khai Minh
-            </div>
-            <nav>
-                <a href="index.html">← Quay lại trang chủ</a>
-            </nav>
-        </header>
+    <header>
+      <div class="logo">
+        <div><img src="./logoIconKhaMinh.png" alt="logo"
+            style="width: 100px;"></div>
+        <!-- Trung tâm Khai Minh -->
+      </div>
+      <nav>
+        <a href="index.html">← Quay lại trang chủ</a>
+      </nav>
+    </header>
 
-        <section class="register-section">
-            <h2>Đăng ký khóa học</h2>
+    <section class="register-section">
+      <h2>Đăng ký khóa học</h2>
 
-            <form id="registerForm">
-                <label>Họ và tên</label>
-                <input type="text" id="name" required>
+      <form id="registerForm">
+        <label>Họ và tên</label>
+        <input type="text" id="name" required>
 
-                <label>Số điện thoại</label>
-                <input type="tel" id="phone" required>
+        <label>Số điện thoại</label>
+        <input type="tel" id="phone" required>
 
-                <label>Email</label>
-                <input type="email" id="email" required>
+        <label>Email</label>
+        <input type="email" id="email" required>
 
-                <label>Chọn khóa học</label>
-                <select id="course" required>
-                    <option value>-- Chọn khóa học --</option>
-                    <option>Toán tư duy</option>
-                    <option>Kỹ năng sống</option>
-                    <option>Hội họa</option>
-                    <option>Âm nhạc</option>
-                </select>
+        <label>Khóa học</label>
+        <input type="text" id="courseName" readonly style="background:#fffaf4;">
 
-                <label>Chọn gói học</label>
-                <select id="package" required>
-                    <option value>-- Chọn gói học --</option>
-                    <option>Gói tháng</option>
-                    <option>Gói 3 tháng</option>
-                </select>
+        <label>Lứa tuổi</label>
+        <input type="text" id="age" readonly style="background:#fffaf4;">
 
-                <button type="submit">Đăng ký ngay</button>
-            </form>
+        <label>Lịch học</label>
+        <input type="text" id="schedule" readonly style="background:#fffaf4;">
 
-            <div class="qr-section" id="qrSection">
-                <h3>Cảm ơn bạn đã đăng ký!<br>Vui lòng quét mã QR bên dưới để
-                    thanh toán.</h3>
-                <img src="QRTTKM.jpg" alt="QR Thanh toán">
-                <p style="margin-top:15px;">Sau khi thanh toán, trung tâm sẽ
-                    liên hệ xác nhận lịch học.</p>
-            </div>
-        </section>
+        <label>Học phí</label>
+        <input type="text" id="fee" readonly style="background:#fffaf4;">
 
-<script>
+        <label>Chọn gói học</label>
+        <select id="package" required>
+          <option value>-- Chọn gói học --</option>
+          <option value="Gói tháng">Gói tháng</option>
+          <option value="Gói 3 tháng">Gói 3 tháng</option>
+        </select>
+
+        <button type="submit">Đăng ký ngay</button>
+      </form>
+
+      <div class="qr-section" id="qrSection">
+        <h3>Cảm ơn bạn đã đăng ký!<br>Vui lòng quét mã QR bên dưới để thanh
+          toán.</h3>
+        <img src="QRTTKM.jpg" alt="QR Thanh toán">
+        <p style="margin-top:15px;">Sau khi thanh toán, trung tâm sẽ liên hệ xác
+          nhận lịch học.</p>
+      </div>
+    </section>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const courseKey = params.get('course');
+  const age = params.get('age');
+  const schedule = params.get('schedule');
+  const fee = params.get('fee');
+
+  const mapCourseName = {
+    toan: "Toán tư duy",
+    kynang: "Kỹ năng sống",
+    hohoa: "Hội họa",
+    amnhac: "Âm nhạc" 
+  };
+  
+  function normalize(str = "") {
+    return str
+      .toString()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '') // remove diacritics
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toLowerCase();
+  }
+
+  // Gán dữ liệu vào form
+  document.getElementById('courseName').value = mapCourseName[courseKey] || '';
+  document.getElementById('age').value = age || '';
+  document.getElementById('schedule').value = schedule || '';
+  document.getElementById('fee').value = fee || '';
+
   const form = document.getElementById('registerForm');
   const qrSection = document.getElementById('qrSection');
 
@@ -172,35 +222,35 @@
       name: document.getElementById('name').value,
       phone: document.getElementById('phone').value,
       email: document.getElementById('email').value,
-      course: document.getElementById('course').value,
-      package: document.getElementById('package').value,
+      course: document.getElementById('courseName').value,
+      age: document.getElementById('age').value,
+      schedule: document.getElementById('schedule').value,
+      fee: document.getElementById('fee').value,
+      package: document.getElementById('package').value
     };
 
-    // 🔗 Thay đường dẫn này bằng link Apps Script Web App của bạn:
-    const scriptURL = "https://script.google.com/macros/s/AKfycbwrxTChR_xX9LPmvIH0dc85aqehqWUtVrzta1dM6sY1TkbM5FjsXqoUqxHq_bQ8zn96/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbw7NLQpU4T6hXkoCkCxB__ecJUzj9Gk4mTbovJrrlPslySVVzw2YtPICfwGKbIR-MbP/exec";
 
     try {
-        await fetch(scriptURL, {
+      await fetch(scriptURL, {
         method: "POST",
         mode: "no-cors",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-        });
+       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  body: new URLSearchParams(
+    Object.entries(data).map(([k, v]) => [k, encodeURIComponent(v)])
+  ).toString()
+      });
 
-
-      console.log("✅ Đã gửi dữ liệu thành công đến Google Sheets");
       form.style.display = "none";
       qrSection.style.display = "block";
       qrSection.scrollIntoView({ behavior: "smooth" });
-
-    } catch (error) {
-      alert("❌ Gửi dữ liệu không thành công, vui lòng thử lại!");
-      console.error("Lỗi:", error);
+    } catch (err) {
+      alert("❌ Gửi dữ liệu thất bại, vui lòng thử lại!");
+      console.error(err);
     }
   });
+});
 </script>
 
-    </body>
+  </body>
 </html>
