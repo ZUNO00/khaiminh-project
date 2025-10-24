@@ -991,3 +991,73 @@ section:nth-child(even) {
   background: #e56f00;
   transform: scale(1.03);
 }
+
+/* Modal popup Teacher */
+
+/* ==== Popup (Modal) đẹp hơn ==== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border: 3px solid #ff7b00; /* viền cam */
+  border-radius: 16px; /* bo tròn góc */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  padding: 30px 40px;
+  max-width: 600px;
+  width: 90%;
+  animation: popupFade 0.3s ease;
+  position: relative;
+}
+
+.modal-content h3 {
+  color: #e67600;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.modal-content b {
+  color: #222;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s;
+}
+.close-btn:hover {
+  color: #ff7b00;
+}
+
+/* hiệu ứng popup */
+@keyframes popupFade {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
