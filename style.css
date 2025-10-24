@@ -23,7 +23,8 @@ body {
   padding: 6px 40px;
 }
 
-.topbar .left, .topbar .right {
+.topbar .left,
+.topbar .right {
   display: flex;
   gap: 15px;
   align-items: center;
@@ -37,6 +38,222 @@ body {
 .topbar a:hover {
   text-decoration: underline;
 }
+
+/* ===== HEADER ===== */
+.main-header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+#tam-nhin .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+#tam-nhin .card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+#tam-nhin ul, #ly-do ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+.reasons-section {
+  background: #fffaf4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.reason-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.reason-card .icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.reason-card h4 {
+  color: #f57c00;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.reason-card p {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.see-more-container {
+  margin-top: 35px;
+}
+
+.see-more-btn {
+  display: inline-block;
+  background: #f57c00;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background: #e56f00;
+}
+
+/* === PHẦN ẨN === */
+.criteria-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+.criteria-box.hidden {
+  display: none;
+}
+
+.criteria-box h3 {
+  color: #f57c00;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.criteria-item {
+  background: #fffaf2;
+  border-radius: 12px;
+  padding: 15px 18px;
+  color: #444;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.criteria-item:hover {
+  background: #fff2e0;
+  transform: translateY(-4px);
+}
+
+
+
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #f57c00;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #f57c00;
+}
+
+/* ===== MOBILE HEADER ===== */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+   /* Topbar nhỏ gọn hơn */
+  .topbar {
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 10px;
+  }
+
+  .topbar span {
+    margin: 0;
+  }
+
+  .main-header {
+    padding: 10px 20px;
+  }
+
+  .logo-img {
+    height: 45px;
+  }
+}
+
 
 /* ================== HEADER ================== */
 header {
@@ -59,16 +276,28 @@ header {
 }
 
 .logo div {
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   background: #fff5e6;
-  border: 2px dashed #f57c00;
+  /* border: 2px dashed #f57c00; */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
   color: #999;
 }
+
+.logo-img {
+  max-height: 50px;
+  /* giới hạn chiều cao */
+  width: auto;
+  /* giữ nguyên tỉ lệ gốc */
+  object-fit: contain;
+  /* hiển thị trọn vẹn */
+  image-rendering: -webkit-optimize-contrast;
+  /* tăng độ sắc nét cho ảnh nhỏ */
+}
+
 
 nav a {
   text-decoration: none;
@@ -97,38 +326,131 @@ section:nth-child(even) {
   margin-bottom: 40px;
 }
 
-/* ================== HERO ================== */
-.hero {
-  display: flex;
-  flex-wrap: wrap;
+/* ===== HERO SLIDER ===== */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #fffaf4;
+}
+
+/* mỗi slide */
+.slide {
+  display: none;
+  width: 100%;
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #f57c00 65%, #fff 35%);
   align-items: center;
+  justify-content: center;
+}
+
+.slide.active {
+  display: flex;
+  animation: fadeIn 0.8s ease;
+}
+
+.banner-content {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
 }
 
-.hero-text {
-  flex: 1 1 45%;
+.text-box {
+  flex: 2;
+  color: #fff;
 }
 
-.hero-text h1 {
-  color: #f57c00;
-  font-size: 2rem;
-  margin-bottom: 15px;
+.text-box h1 {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+  line-height: 1.3;
 }
 
-.hero-text p {
-  color: #444;
+.text-box p {
+  color: #fffaf4;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
   line-height: 1.6;
 }
 
-.hero-img {
-  flex: 1 1 45%;
-  background: #f3f3f3;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #aaa;
+.btn-primary {
+  display: inline-block;
+  background: #fff;
+  color: #f57c00;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
+
+.btn-primary:hover {
+  background: #ffe5c2;
+}
+
+/* hình bên phải */
+.image-box {
+  flex: 1;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* nút chuyển slide */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(245,124,0,0.85);
+  color: white;
+  border: none;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.nav-btn:hover {
+  background: rgba(229,111,0,1);
+}
+
+.nav-btn.prev { left: 20px; }
+.nav-btn.next { right: 20px; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .slide.active {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .image-box {
+    width: 90%;
+    max-height: 300px;
+  }
+  .text-box h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
 
 /* ================== GRID BOXES ================== */
 .grid {
@@ -140,7 +462,7 @@ section:nth-child(even) {
 .card {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s;
 }
@@ -185,7 +507,7 @@ section:nth-child(even) {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form input,
@@ -216,20 +538,53 @@ section:nth-child(even) {
     flex-direction: column;
     align-items: flex-start;
   }
+
   nav {
     margin-top: 10px;
   }
+
   .hero {
     flex-direction: column;
     text-align: center;
   }
+
   .hero-img {
     margin-top: 20px;
   }
+
   .contact {
     flex-direction: column;
   }
 }
+
+#khoa-hoc .img-box.no-image {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 15px;
+  background: linear-gradient(135deg, #007bff 0%, #f57c00 100%);
+  padding: 5px;
+  border-radius: 20px;
+  border: 3px solid #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+#khoa-hoc .img-box.no-image:hover {
+  transform: translateY(-5px);
+}
+
+#khoa-hoc .course-title-center {
+  line-height: 1.3;
+}
+
 
 /* =========== GIÁO VIÊN SLIDER =========== */
 .teacher-container {
@@ -251,7 +606,7 @@ section:nth-child(even) {
   margin: 0 1%;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
 }
@@ -294,7 +649,7 @@ section:nth-child(even) {
   cursor: pointer;
   font-size: 22px;
   opacity: 0.9;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
   z-index: 10;
   transition: all 0.3s ease;
 }
@@ -321,6 +676,83 @@ section:nth-child(even) {
   }
 }
 
+/* ======== ẢNH GIÁO VIÊN ======== */
+.teacher-card .img-box {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f57c00 0%, #007bff 100%);
+  padding: 5px; /* viền ngoài xanh */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-card .img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 4px solid #f57c00; /* viền trong cam */
+  transition: transform 0.3s ease;
+}
+
+.teacher-card .img-box img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Đảm bảo card có cùng kích thước ổn định */
+.teacher-card {
+  flex: 0 0 31%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  padding-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+.teacher-card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #f57c00;
+}
+
+.teacher-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 15px;
+}
+
+.teacher-card .more-btn {
+  background: #f57c00;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: background 0.3s ease;
+}
+
+.teacher-card .more-btn:hover {
+  background: #e56f00;
+}
+
+
 /* =========== HỌC PHÍ CARDS =========== */
 .price-grid {
   display: grid;
@@ -333,13 +765,13 @@ section:nth-child(even) {
   border: 2px solid #ffe5c2;
   border-radius: 10px;
   padding: 25px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .price-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
 }
 
 .price-card h3 {
@@ -359,3 +791,203 @@ section:nth-child(even) {
   color: #f57c00;
 }
 
+.site-footer {
+  background: #004c99;
+  color: #fff;
+  padding: 50px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-column h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #cce0ff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a img {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  transition: transform 0.2s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+/* Popup & Card trong phần More */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h3 {
+  color: #f57c00;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 26px;
+  color: #555;
+  cursor: pointer;
+}
+
+.class-card {
+  background: #fffaf4;
+  border: 1px solid #fcd4a3;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.class-card h4 {
+  color: #f57c00;
+  margin-bottom: 5px;
+}
+
+.class-card p {
+  margin: 2px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button “More” */
+.more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #f57c00;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.more-btn:hover {
+  background: #e46f00;
+}
+
+
+.class-card {
+  background: #fff7f0;
+  border: 1px solid #fcd4a3;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(245, 124, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(245, 124, 0, 0.25);
+}
+
+.class-card p {
+  margin: 4px 0;
+}
+
+.class-card a.register-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #f57c00;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.class-card a.register-btn:hover {
+  background: #e56f00;
+  transform: scale(1.03);
+}
