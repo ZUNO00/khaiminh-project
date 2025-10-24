@@ -8,253 +8,528 @@
 </head>
 <body>
 
-<!-- Thanh liên hệ -->
-<div class="topbar">
-  <div class="left">
-    <span>📞 028 7302 8017</span>
-    <span>✉️ info@khaiminh.com</span>
+  <!-- ===== Topbar ===== -->
+  <div class="topbar">
+    <div class="left">
+      <span>📞 028 7302 8017</span>
+      <span>✉️ info@khaiminh.com</span>
+    </div>
+    <div class="right">
+      <a href="#">Facebook</a>
+      <a href="#">Zalo</a>
+      <a href="#">YouTube</a>
+    </div>
   </div>
-  <div class="right">
-    <a href="#">Facebook</a>
-    <a href="#">Zalo</a>
-    <a href="#">YouTube</a>
-  </div>
-</div>
 
-<!-- Header -->
-<header>
-  <div class="logo">
-    <div>Logo</div>
-    Trung tâm Khai Minh
-  </div>
-  <nav>
-    <a href="#gioi-thieu">Giới thiệu</a>
-    <a href="#gia-tri">Giá trị</a>
-    <a href="#su-menh">Sứ mệnh</a>
-    <a href="#khoa-hoc">Khóa học</a>
-    <a href="#giao-vien">Giáo viên</a>
-    <a href="#hoc-phi">Học phí</a>
-    <a href="#lien-he">Liên hệ</a>
-    <a href="./dangky.html">Đăng ký</a>
-  </nav>
-</header>
+  <!-- ===== Header ===== -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="./logoIconKhaMinh.png" alt="Trung tâm Khai Minh" class="logo-img">
+    </div>
+    <nav id="navMenu" class="nav-menu">
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <!-- <a href="#gia-tri">Giá trị</a> -->
+      <a href="#su-menh">Sứ mệnh</a>
+      <a href="#khoa-hoc">Khóa học</a>
+      <a href="#giao-vien">Giáo viên</a>
+      <a href="#lien-he">Liên hệ</a>
+      <a href="/dangky.html">Đăng ký</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </header>
 
-<!-- Giới thiệu -->
-<section id="gioi-thieu" class="hero">
-  <div class="hero-text">
-    <h1>Phát triển tư duy và năng khiếu cùng Khai Minh</h1>
-    <p>Trung tâm đào tạo Toán tư duy, Kỹ năng sống, Hội họa, Âm nhạc cho học sinh từ 5–18 tuổi. 
-    Giúp trẻ tự tin, sáng tạo và học tập hiệu quả.</p>
+  <!-- ===== Giới thiệu ===== -->
+<section class="hero-slider">
+  <div class="slide active">
+    <div class="banner-content">
+      <div class="text-box">
+        <h1>Phát triển tư duy & năng khiếu cùng Khai Minh</h1>
+        <p>Giúp trẻ phát triển toàn diện về tư duy, kỹ năng và kiến thức qua chương trình “học mà chơi – chơi mà học”.</p>
+        <a href="#gioi-thieu" class="btn-primary">Tìm hiểu thêm</a>
+      </div>
+      <div class="image-box">
+        <img src="./banner.png" alt="Học sinh Khai Minh">
+      </div>
+    </div>
   </div>
-  <div class="hero-img">[Ảnh banner]</div>
+
+  <div class="slide">
+    <div class="banner-content">
+      <div class="text-box">
+        <h1>Khơi nguồn tri thức – Nâng tầm trí tuệ Việt</h1>
+        <p>Trung tâm Khai Minh mang đến môi trường học tập năng động và sáng tạo, giúp trẻ phát huy tối đa tiềm năng bản thân.</p>
+        <a href="#khoa-hoc" class="btn-primary">Xem khóa học</a>
+      </div>
+      <div class="image-box">
+        <img src="./banner1.png" alt="Giáo viên Khai Minh">
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="banner-content">
+      <div class="text-box">
+        <h1>Đội ngũ giảng viên tận tâm – Phương pháp hiện đại</h1>
+        <p>Học sinh được hướng dẫn bởi giáo viên chuyên môn cao, phương pháp học tập cá nhân hóa và sinh động.</p>
+        <a href="#giao-vien" class="btn-primary">Gặp gỡ giảng viên</a>
+      </div>
+      <div class="image-box">
+        <img src="./banner2.png" alt="Lớp học Khai Minh">
+      </div>
+    </div>
+  </div>
+
+  <button class="nav-btn prev">&#10094;</button>
+  <button class="nav-btn next">&#10095;</button>
 </section>
 
-<!-- Giá trị -->
-<section id="gia-tri">
-  <h2 class="section-title">Giá trị</h2>
-  <div class="grid">
-    <div class="card">
-      <div class="img-box">[Ảnh giá trị 1]</div>
-      <div class="content">
-        <h3>Giáo viên chuyên nghiệp</h3>
-        <p>Đội ngũ giảng viên tận tâm, nhiều năm kinh nghiệm trong giảng dạy và đào tạo học sinh.</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="img-box">[Ảnh giá trị 2]</div>
-      <div class="content">
-        <h3>Phương pháp hiệu quả</h3>
-        <p>Chương trình được thiết kế theo hướng phát triển tư duy logic và sáng tạo cho học sinh.</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="img-box">[Ảnh giá trị 3]</div>
-      <div class="content">
-        <h3>Môi trường tích cực</h3>
-        <p>Không gian học tập thân thiện, giúp học sinh yêu thích việc học và phát huy năng khiếu.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Sứ mệnh -->
+
+
+
+<!-- ===== Tầm nhìn - Sứ mệnh - Giá trị cốt lõi ===== -->
 <section id="su-menh">
-  <h2 class="section-title">Sứ mệnh</h2>
-  <div class="hero">
-    <div class="hero-text">
-      <p>“Mang đến cho trẻ em Việt Nam cơ hội phát triển toàn diện về trí tuệ, kỹ năng và cảm xúc.”</p>
-      <p>Trung tâm Khai Minh hướng tới xây dựng thế hệ học sinh tự tin, sáng tạo và hạnh phúc trong học tập.</p>
+  <h2 class="section-title">Tầm nhìn - Sứ mệnh - Giá trị cốt lõi</h2>
+  <div class="grid vision-section">
+    <div class="card">
+      <h3>🎯 Tầm nhìn</h3>
+      <p>VieLinKit phấn đấu trở thành đối tác đổi mới sáng tạo giáo dục đạt chuẩn quốc tế.</p>
     </div>
-    <div class="hero-img">[Ảnh sứ mệnh]</div>
+
+    <div class="card">
+      <h3>💡 Sứ mệnh</h3>
+      <ul>
+        <li>Ứng dụng đổi mới sáng tạo trong ngành Giáo dục</li>
+        <li>Phát triển dụng cụ học tập và học liệu (kể cả học liệu số)</li>
+        <li>Phục vụ giáo dục tiểu học cho trẻ em Việt Nam và trẻ em yếu thế trên thế giới</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🌱 Giá trị cốt lõi</h3>
+      <ul>
+        <li>Tận tâm với các hoạt động giáo dục</li>
+        <li>Trách nhiệm xã hội</li>
+        <li>Đổi mới sáng tạo trong giáo dục</li>
+        <li>Hợp tác cùng phát triển</li>
+        <li>Không phân biệt trẻ em bất kể nơi sinh sống và ngôn ngữ</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<!-- Khóa học -->
+<!-- ===== Lý do chọn Khai Minh ===== -->
+<section id="ly-do" class="reasons-section">
+  <h2 class="section-title">Lý do chọn Khai Minh</h2>
+  <p class="section-subtitle">
+    Trung tâm Khai Minh là lựa chọn lý tưởng giúp trẻ từ 5–11 tuổi phát triển toàn diện về tư duy, năng khiếu và kỹ năng học tập.
+  </p>
+
+  <div class="reasons-grid">
+    <div class="reason-card">
+      <div class="icon">🌱</div>
+      <h4>Phát triển toàn diện</h4>
+      <p>Giúp trẻ phát triển kiến thức, kỹ năng và tư duy logic.</p>
+    </div>
+
+    <div class="reason-card">
+      <div class="icon">🎯</div>
+      <h4>Cải thiện kết quả học tập</h4>
+      <p>Đội ngũ gia sư tận tâm giúp trẻ đạt mục tiêu học tập rõ ràng.</p>
+    </div>
+
+    <div class="reason-card">
+      <div class="icon">🏗️</div>
+      <h4>Tạo nền tảng vững chắc & Tự tin</h4>
+      <p>Xây dựng nền tảng kiến thức và kỹ năng học tập cơ bản vững chắc giúp trẻ mạnh dạn, tự tin hơn trong giao tiếp và học tập.</p>
+    </div>
+
+    <div class="reason-card">
+      <div class="icon">💡</div>
+      <h4>Phát huy tiềm năng</h4>
+      <p>Khơi dậy năng khiếu và sở thích, giúp trẻ tự tin thể hiện bản thân.</p>
+    </div>
+
+    <div class="reason-card">
+      <div class="icon">👩‍🏫</div>
+      <h4>Hỗ trợ cá nhân hóa</h4>
+      <p>Chương trình học được cá nhân hóa phù hợp với từng học sinh.</p>
+    </div>
+
+    <div class="reason-card">
+      <div class="icon">📊</div>
+      <h4>Phụ huynh theo dõi tiến độ</h4>
+      <p>Báo cáo định kỳ giúp phụ huynh nắm bắt tiến trình học tập của con.</p>
+    </div>
+  </div>
+
+  <div class="see-more-container">
+    <a id="seeMoreBtn" class="see-more-btn">↓ Xem thêm</a>
+  </div>
+
+  <!-- Ẩn mặc định -->
+  <div id="criteriaBox" class="criteria-box hidden">
+    <h3>🧭 Khi chọn trung tâm, phụ huynh nên xem xét</h3>
+    <div class="criteria-grid">
+      <div class="criteria-item">🎓 Chất lượng và chuyên môn của giáo viên.</div>
+      <div class="criteria-item">📘 Chương trình học phù hợp với mục tiêu của trẻ.</div>
+      <div class="criteria-item">💬 Phương pháp giảng dạy hiện đại, phù hợp với từng học sinh.</div>
+      <div class="criteria-item">👨‍👧‍👦 Tỉ lệ học sinh/gia sư hợp lý, đảm bảo sự quan tâm cá nhân.</div>
+      <div class="criteria-item">📈 Chính sách đánh giá và phản hồi minh bạch, hiệu quả.</div>
+    </div>
+  </div>
+</section>
+
+
+
 <section id="khoa-hoc">
   <h2 class="section-title">Các khóa học</h2>
   <div class="grid">
     <div class="card">
-      <div class="img-box">[Ảnh Toán tư duy]</div>
+      <div class="img-box no-image">
+        <div class="course-title-center">Toán tư duy</div>
+      </div>
       <div class="content">
         <h3>Toán tư duy</h3>
-        <p>Rèn luyện tư duy logic, kỹ năng giải quyết vấn đề thông qua hoạt động thực tế.</p>
+        <p>Rèn luyện tư duy logic, kỹ năng giải quyết vấn đề qua hoạt động thực tế.</p>
+        <a class="more-btn" data-type="course" data-key="toan">Xem thêm</a>
       </div>
     </div>
+
     <div class="card">
-      <div class="img-box">[Ảnh Kỹ năng sống]</div>
+      <div class="img-box no-image">
+        <div class="course-title-center">Kỹ năng sống</div>
+      </div>
       <div class="content">
         <h3>Kỹ năng sống</h3>
         <p>Phát triển khả năng giao tiếp, tự lập và làm việc nhóm hiệu quả.</p>
+        <a class="more-btn" data-type="course" data-key="kynang">Xem thêm</a>
       </div>
     </div>
+
     <div class="card">
-      <div class="img-box">[Ảnh Hội họa]</div>
+      <div class="img-box no-image">
+        <div class="course-title-center">Hội họa</div>
+      </div>
       <div class="content">
         <h3>Hội họa</h3>
         <p>Khơi gợi năng khiếu sáng tạo và cảm nhận thẩm mỹ qua từng nét vẽ.</p>
+        <a class="more-btn" data-type="course" data-key="hohoa">Xem thêm</a>
       </div>
     </div>
+
     <div class="card">
-      <div class="img-box">[Ảnh Âm nhạc]</div>
+      <div class="img-box no-image">
+        <div class="course-title-center">Âm nhạc</div>
+      </div>
       <div class="content">
         <h3>Âm nhạc</h3>
         <p>Giúp trẻ thể hiện cảm xúc, tăng sự tập trung và phát triển toàn diện.</p>
+        <a class="more-btn" data-type="course" data-key="amnhac">Xem thêm</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Giáo viên -->
-<!-- Giáo viên (có slide) -->
+
+
+
+
+<!-- ===== Giáo viên ===== -->
 <section id="giao-vien">
   <h2 class="section-title">Đội ngũ giáo viên</h2>
-
   <div class="teacher-container">
     <button class="teacher-btn prev">‹</button>
     <div class="teacher-wrapper">
       <div class="teacher-slide">
-        <!-- Thêm bao nhiêu giáo viên tùy thích -->
-        <div class="teacher-card">
-          <div class="img-box">[Ảnh giáo viên]</div>
-          <h3>Ngô Kim Lan</h3>
-          <p>Cử nhân Giáo dục tiểu học – Smart VieLinKit</p>
-        </div>
-
-        <div class="teacher-card">
-          <div class="img-box">[Ảnh giáo viên]</div>
-          <h3>Trần Thị Hồng</h3>
-          <p>Cử nhân Giáo dục tiểu học – Trường Tiểu học Bạch Đằng</p>
-        </div>
-
-        <div class="teacher-card">
-          <div class="img-box">[Ảnh giáo viên]</div>
-          <h3>Phan Trần Tuyết Ngọc</h3>
-          <p>Cử nhân Giáo dục tiểu học – Trường Tiểu học Bạch Đằng</p>
-        </div>
-
-        <div class="teacher-card">
-          <div class="img-box">[Ảnh giáo viên]</div>
-          <h3>Cô giáo Vẽ</h3>
-          <p>Cử nhân Mỹ thuật – Smart VieLinKit</p>
-        </div>
-
-        <div class="teacher-card">
-          <div class="img-box">[Ảnh giáo viên]</div>
-          <h3>Cô giáo Nhạc</h3>
-          <p>Cử nhân Thanh nhạc – Smart VieLinKit</p>
-        </div>
+        <div class="teacher-card"><div class="img-box"><img src="./assets/picteacher/NgoKimLan.png" alt=""></div><h3>Ngô Kim Lan</h3><p>Cử nhân GD Tiểu học – Smart VieLinkit</p><a class="more-btn" data-type="teacher" data-key="lan">Xem thêm</a></div>
+        <div class="teacher-card"><div class="img-box"><img src="./assets/picteacher/TranTHiHong.jpg" alt=""></div><h3>Trần Thị Hồng</h3><p>Cử nhân GD Tiểu học – TH Bạch Đằng</p><a class="more-btn" data-type="teacher" data-key="hong">Xem thêm</a></div>
+        <div class="teacher-card"><div class="img-box"><img src="./assets/picteacher/NguyenNhatLinh.jpg" alt=""></div><h3>Nguyễn Nhật Linh</h3><p>Cử nhân GD Tiểu học – TH Bạch Đằng</p><a class="more-btn" data-type="teacher" data-key="linh">Xem thêm</a></div>
+        <div class="teacher-card"><div class="img-box"><img src="./assets/picteacher/NguyenDuyMaiThao.jpg" alt=""></div><h3>Nguyễn Duy Mai Thảo</h3><p>Cử nhân GD Tiểu học – TH Bạch Đằng</p><a class="more-btn" data-type="teacher" data-key="thao">Xem thêm</a></div>
+        <div class="teacher-card"><div class="img-box"><img src="./assets/picteacher/VanThiBaoChieu.jpg" alt=""></div><h3>Văn Thị Bảo Chiêu</h3><p>Cử nhân GD Tiểu học – TH Bạch Đằng</p><a class="more-btn" data-type="teacher" data-key="chieu">Xem thêm</a></div>
+        <div class="teacher-card"><div class="img-box"><img src="./assets/picteacher/VuThiThuTrang.jpg" alt=""></div><h3>Quách Thị Đoan Trang</h3><p>Cử nhân GD Tiểu học – TH Bạch Đằng</p><a class="more-btn" data-type="teacher" data-key="trang">Xem thêm</a></div>
+        <div class="teacher-card"><div class="img-box"><img src="./assets/picteacher/TaAnhNgoc.jpg" alt=""></div><h3>Tạ Ánh Ngọc</h3><p>Cử nhân GD Tiểu học – TH Bạch Đằng</p><a class="more-btn" data-type="teacher" data-key="ngoc">Xem thêm</a></div>
+        <div class="teacher-card"><div class="img-box"><img src="./assets/picteacher/HuynhCaoNhuThuy.jpg" alt=""></div><h3>Huỳnh Cao Như Thùy</h3><p>Cử nhân GD Tiểu học – TH Bạch Đằng</p><a class="more-btn" data-type="teacher" data-key="thuy">Xem thêm</a></div>
+        <div class="teacher-card"><div class="img-box"><img src="./assets/picteacher/ThayQuy.jpg" alt=""></div><h3>Huỳnh Kim Quy</h3><p>Tiến sĩ Toán học – ĐH Sư phạm TP.HCM</p><a class="more-btn" data-type="teacher" data-key="quy">Xem thêm</a></div>
+        <!-- <div class="teacher-card"><div class="img-box">[Ảnh GV]</div><h3>Nguyễn Lâm Hữu Phước</h3><p>Tiến sĩ KH Giáo dục – ĐH Sư phạm TP.HCM</p><a class="more-btn" data-type="teacher" data-key="phuoc">Xem thêm</a></div> -->
       </div>
     </div>
     <button class="teacher-btn next">›</button>
   </div>
 </section>
 
-
-<!-- Học phí -->
-<!-- Học phí (dạng card) -->
-<section id="hoc-phi">
-  <h2 class="section-title">Học phí</h2>
-  <div class="price-grid">
-    <div class="price-card">
-      <h3>Toán tư duy (5–10 tuổi)</h3>
-      <p><b>2 buổi/tuần</b></p>
-      <ul>
-        <li>Học phí/buổi: 100.000đ</li>
-        <li>Gói tháng: 700.000đ</li>
-        <li>Gói 3 tháng: 2.000.000đ</li>
-      </ul>
-    </div>
-
-    <div class="price-card">
-      <h3>Kỹ năng sống (6–15 tuổi)</h3>
-      <p><b>1 buổi/tuần</b></p>
-      <ul>
-        <li>Học phí/buổi: 100.000đ</li>
-        <li>Gói tháng: 350.000đ</li>
-        <li>Gói 3 tháng: 990.000đ</li>
-      </ul>
-    </div>
-
-    <div class="price-card">
-      <h3>Hội họa / Âm nhạc</h3>
-      <p><b>2 buổi/tuần</b></p>
-      <ul>
-        <li>Học phí/buổi: 100.000đ</li>
-        <li>Gói tháng: 700.000đ</li>
-        <li>Gói 3 tháng: 2.000.000đ</li>
-      </ul>
+  <!-- ===== Modal ===== -->
+  <div class="modal" id="infoModal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <div id="modalContent"></div>
     </div>
   </div>
-</section>
 
-
-<!-- Liên hệ -->
-<section id="lien-he">
-  <h2 class="section-title">Liên hệ</h2>
-  <div class="contact">
-    <div class="contact-info">
-      <p><b>Địa chỉ:</b> 118/29 Bạch Đằng, P. Bình Thạnh, TP.HCM</p>
-      <p><b>Hotline:</b> +84 833</p>
-      <p><b>Email:</b> trungtamkhaiminh1@gmail.com</p>
-      <p><b>Website:</b> www.trungtamkhaiminh.com</p>
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column"><h3>Liên hệ</h3><p>Tầng 12, Tòa nhà Viettel, 285 Cách Mạng Tháng 8, Quận 10, TP.HCM</p><p>📞 028 73 028 017<br>✉️ info@khaiminh.com</p></div>
+      <div class="footer-column"><h3>Sản phẩm</h3><ul><li><a href="#">Toán tư duy</a></li><li><a href="#">Kỹ năng sống</a></li><li><a href="#">Hội họa</a></li><li><a href="#">Âm nhạc</a></li></ul></div>
+      <div class="footer-column"><h3>Liên kết</h3><ul><li><a href="#">Về chúng tôi</a></li><li><a href="#">Tin tức</a></li><li><a href="#">Chính sách</a></li><li><a href="#">Liên hệ</a></li></ul></div>
+      <div class="footer-column"><h3>Câu chuyện</h3><p>VieLinkit đồng hành cùng học sinh trong hành trình phát triển tư duy, sáng tạo và kỹ năng toàn diện.</p></div>
     </div>
-    <form class="contact-form">
-      <input type="text" placeholder="Họ và tên">
-      <input type="email" placeholder="Email">
-      <textarea rows="4" placeholder="Nội dung"></textarea>
-      <button>Gửi ngay</button>
-    </form>
-  </div>
-</section>
+    <div class="footer-bottom"><img src="./logoFooter.png" alt="Logo" class="footer-logo"><p>© 2025 Trung tâm Khai Minh</p></div>
+  </footer>
 
 <script>
-  const slide = document.querySelector('.teacher-slide');
-  const prevBtn = document.querySelector('.teacher-btn.prev');
-  const nextBtn = document.querySelector('.teacher-btn.next');
+const slides = document.querySelectorAll(".slide");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+let current = 0;
 
-  let offset = 0;
-  const slideCount = document.querySelectorAll('.teacher-card').length;
-  const visible = window.innerWidth <= 768 ? 1 : 3;
-  const step = 100 / visible;
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
+  });
+}
 
-  nextBtn.addEventListener('click', () => {
-    if (offset < (slideCount - visible) * step) offset += step;
-    slide.style.transform = `translateX(-${offset}%)`;
+nextBtn.addEventListener("click", () => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+});
+
+prevBtn.addEventListener("click", () => {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+});
+
+// Tự động chạy
+setInterval(() => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}, 6000);
+
+
+</script>
+
+
+  <script>
+document.getElementById("seeMoreBtn").addEventListener("click", () => {
+  const criteria = document.getElementById("criteriaBox");
+  criteria.classList.toggle("hidden");
+
+  if (!criteria.classList.contains("hidden")) {
+    document.getElementById("seeMoreBtn").textContent = "↑ Thu gọn";
+    criteria.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else {
+    document.getElementById("seeMoreBtn").textContent = "↓ Xem thêm";
+  }
+});
+</script>
+
+
+<script>
+// ===== Slider Giáo viên =====
+document.addEventListener("DOMContentLoaded", () => {
+  const slide = document.querySelector(".teacher-slide");
+  const prevBtn = document.querySelector(".teacher-btn.prev");
+  const nextBtn = document.querySelector(".teacher-btn.next");
+
+  if (!slide) return;
+
+  let scrollAmount = 0;
+  const cardWidth = 260; // chiều rộng ước lượng 1 card + margin
+  const visibleCards = 3; // số card hiển thị trên 1 khung
+  const maxScroll = (slide.children.length - visibleCards) * cardWidth;
+
+  nextBtn.addEventListener("click", () => {
+    scrollAmount = Math.min(scrollAmount + cardWidth * visibleCards, maxScroll);
+    slide.style.transform = `translateX(-${scrollAmount}px)`;
   });
 
-  prevBtn.addEventListener('click', () => {
-    if (offset > 0) offset -= step;
-    slide.style.transform = `translateX(-${offset}%)`;
+  prevBtn.addEventListener("click", () => {
+    scrollAmount = Math.max(scrollAmount - cardWidth * visibleCards, 0);
+    slide.style.transform = `translateX(-${scrollAmount}px)`;
+  });
+});
+</script>
+
+<!-- ===== JS ===== -->
+<script>
+const courseData = {
+  toan: {
+    title: "Toán tư duy & Toán tư duy nâng cao",
+    schedule: [
+      { age: "5 - 6 tuổi", schedule: "Thứ 2,4,6 hoặc 3,5 (8:30–10:00)", note: "Hàng tuần", fee: "700.000đ/tháng" },
+      { age: "6 - 7 tuổi", schedule: "Thứ 2,4 hoặc 3,5 (16:30–18:00)", note: "Hàng tuần", fee: "800.000đ/tháng" },
+      { age: "8 - 11 tuổi", schedule: "Thứ 2,4,6 hoặc 3,5,7 (16:30–18:00)", note: "Hàng tuần", fee: "1.000.000đ/tháng" },
+      { age: "Toán tư duy nâng cao (6–11 tuổi)", schedule: "Thứ 7 & CN (8:30–10:00 hoặc 15:00–16:30)", note: "Hàng tuần", fee: "1.500.000đ/tháng" }
+    ]
+  },
+  kynang: {
+    title: "Kỹ năng sống",
+    schedule: [
+      { age: "5 - 6 tuổi", schedule: "Thứ 2,4,6 (8:30–10:00)", note: "Hàng tuần", fee: "350.000đ/tháng" },
+      { age: "6 - 15 tuổi", schedule: "Thứ 7 & CN (8:30–10:00)", note: "Hàng tuần", fee: "700.000đ/tháng" },
+      { age: "Trẻ hòa nhập (6 - 11 tuổi)", schedule: "Thứ 2–6 (8:30–10:00)", note: "Hàng tuần", fee: "2.000.000đ/tháng" }
+    ]
+  },
+  chuDep: {
+    title: "Luyện viết chữ đẹp",
+    schedule: [
+      { age: "5 - 7 tuổi", schedule: "Thứ 2,4 hoặc 3,5 (16:30–18:00)", note: "Cơ bản", fee: "700.000đ/tháng" },
+      { age: "6 - 11 tuổi", schedule: "Thứ 7 & CN (8:30–10:00 hoặc 14:30–16:00)", note: "Nâng cao", fee: "700.000đ/tháng" }
+    ]
+  },
+  hohoa: {
+    title: "Nghệ thuật – Hội họa",
+    schedule: [
+      { age: "6 - 11 tuổi", schedule: "Thứ 2–6 (16:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" },
+      { age: "6 - 11 tuổi", schedule: "Thứ 7 & CN (8:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" }
+    ]
+  },
+  amnhac: {
+    title: "Nghệ thuật – Âm nhạc",
+    schedule: [
+      { age: "6 - 11 tuổi", schedule: "Thứ 2–6 (16:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" },
+      { age: "6 - 11 tuổi", schedule: "Thứ 7 & CN (8:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" }
+    ]
+  }
+};
+
+
+const teacherData = {
+  lan: "Cô Ngô Kim Lan – Cử nhân Giáo dục Tiểu học, Công ty cổ phần giáo dục Smart VieLinkit.",
+  hong: "Cô Trần Thị Hồng – Cử nhân Giáo dục Tiểu học, Trường Tiểu học Bạch Đằng.",
+  linh: "Cô Nguyễn Nhật Linh – Cử nhân Giáo dục Tiểu học, Trường Tiểu học Bạch Đằng.",
+  thao: "Cô Nguyễn Duy Mai Thảo – Cử nhân Giáo dục Tiểu học, Trường Tiểu học Bạch Đằng.",
+  chieu: "Cô Văn Thị Bảo Chiêu – Cử nhân Giáo dục Tiểu học, Trường Tiểu học Bạch Đằng.",
+  trang: "Cô Quách Thị Đoan Trang – Cử nhân Giáo dục Tiểu học, Trường Tiểu học Bạch Đằng.",
+  ngoc: "Cô Tạ Ánh Ngọc – Cử nhân Giáo dục Tiểu học, Trường Tiểu học Bạch Đằng.",
+  thuy: "Cô Huỳnh Cao Như Thùy – Cử nhân Giáo dục Tiểu học, Trường Tiểu học Bạch Đằng.",
+  thanh: "Thầy Dương Minh Thành – Tiến sĩ Toán học, Đại học Sư phạm TP.HCM, Cố vấn chuyên môn Toán tư duy.",
+  phuoc: "Thầy Nguyễn Lâm Hữu Phước – Tiến sĩ Khoa học giáo dục, Đại học Sư phạm TP.HCM.",
+  trangVu: "Cô Vũ Thị Thu Trang – Thạc sĩ Giáo dục Tiểu học, Trường Tiểu học Bạch Đằng.",
+  quy: "Thầy Huỳnh Kim Quy – Tiến sĩ Khoa học giáo dục đặc biệt, Cố vấn chuyên môn đặc biệt.",
+  ve: "Cô giáo Vẽ – Cử nhân Mỹ thuật, Công ty cổ phần giáo dục Smart VieLinkit.",
+  nhac: "Cô giáo Nhạc – Cử nhân Thanh nhạc, Công ty cổ phần giáo dục Smart VieLinkit."
+};
+
+
+const modal = document.getElementById("infoModal");
+const title = document.getElementById("modalTitle");
+const content = document.getElementById("modalContent");
+
+document.querySelectorAll(".more-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const type = btn.dataset.type;
+    const key = btn.dataset.key;
+    const card = btn.closest(".card") || btn.closest(".teacher-card");
+    const courseTitle = card?.querySelector("h3")?.textContent || "Thông tin";
+
+    title.textContent = courseTitle;
+
+    if (type === "course") {
+      const data = courseData[key];
+      if (!data) return;
+
+      content.innerHTML = `
+        <h4>📘 Thời khóa biểu</h4>
+        ${data.schedule.map(c => `
+          <div class="class-card">
+            <p><b>Lứa tuổi:</b> ${c.age}</p>
+            <p><b>Lịch học:</b> ${c.schedule}</p>
+            <p><b>Ghi chú:</b> ${c.note}</p>
+            <p><b>Học phí:</b> ${c.fee}</p>
+             <a href="dangky.html?course=${encodeURIComponent(courseTitle)}&age=${encodeURIComponent(c.age)}&schedule=${encodeURIComponent(c.schedule)}&fee=${encodeURIComponent(c.fee)}"
+               class="register-btn">Đăng ký khóa học này</a>
+          </div>
+        `).join("")}
+      `;
+    } else if (type === "teacher") {
+      const info = teacherData[key];
+      content.innerHTML = `<p>${info || "Thông tin đang được cập nhật."}</p>`;
+    }
+
+    modal.style.display = "flex";
+  });
+});
+
+document.querySelector(".close-btn").onclick = () => modal.style.display = "none";
+window.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
+</script>
+<script>
+/**
+ * Mobile menu toggle robust script
+ * - toggle class 'show' on #navMenu when #menuToggle clicked
+ * - close menu when a nav link is clicked
+ * - close menu when click outside
+ * - safe: checks for element existence
+ */
+(function () {
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  if (!menuToggle) {
+    console.warn('menuToggle element not found (id="menuToggle")');
+    return;
+  }
+  if (!navMenu) {
+    console.warn('navMenu element not found (id="navMenu")');
+    return;
+  }
+
+  // Helper: toggle menu
+  function setMenu(open) {
+    if (open) {
+      navMenu.classList.add('show');    // matches many CSS implementations
+      navMenu.classList.add('open');    // also add 'open' for safety if CSS uses that
+      menuToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden'; // optional: prevent background scroll while menu open
+    } else {
+      navMenu.classList.remove('show');
+      navMenu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = ''; // restore
+    }
+  }
+
+  // Toggle on click
+  menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = navMenu.classList.contains('show') || navMenu.classList.contains('open');
+    setMenu(!isOpen);
   });
 
-  window.addEventListener('resize', () => {
-    offset = 0;
-    slide.style.transform = 'translateX(0)';
+  // Close when clicking any link inside navMenu
+  navMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      setMenu(false);
+    });
   });
+
+  // Close when clicking outside the navMenu (on small screens)
+  document.addEventListener('click', (e) => {
+    // if menu not open, do nothing
+    if (!(navMenu.classList.contains('show') || navMenu.classList.contains('open'))) return;
+
+    // if click is inside navMenu or on menuToggle, ignore
+    if (navMenu.contains(e.target) || menuToggle.contains(e.target)) return;
+
+    // otherwise close
+    setMenu(false);
+  });
+
+  // Optional: close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenu(false);
+  });
+
+  // Accessibility defaults
+  menuToggle.setAttribute('role', 'button');
+  menuToggle.setAttribute('aria-controls', 'navMenu');
+  if (!menuToggle.hasAttribute('aria-expanded')) menuToggle.setAttribute('aria-expanded', 'false');
+
+})();
 </script>
 
 
 </body>
 </html>
-
-
