@@ -34,7 +34,7 @@
         <a href="#khoa-hoc">Khóa học</a>
         <a href="#giao-vien">Giáo viên</a>
         <a href="#lien-he">Liên hệ</a>
-        <a href="./dangky.html">Đăng ký</a>
+        <a href="/dangky.html">Đăng ký</a>
       </nav>
       <div class="menu-toggle" id="menuToggle">☰</div>
     </header>
@@ -88,37 +88,42 @@
     </section>
 
     <!-- ===== Tầm nhìn - Sứ mệnh - Giá trị cốt lõi ===== -->
-    <section id="su-menh">
-      <h2 class="section-title">Tầm nhìn - Sứ mệnh - Giá trị cốt lõi</h2>
-      <div class="grid vision-section">
-        <div class="card">
-          <h3>🎯 Tầm nhìn</h3>
-          <p>VieLinKit phấn đấu trở thành đối tác đổi mới sáng tạo giáo dục đạt
-            chuẩn quốc tế.</p>
-        </div>
+<section id="su-menh" class="core-values-slider">
+  <h2 class="section-title">Tầm nhìn - Sứ mệnh - Giá trị cốt lõi</h2>
 
-        <div class="card">
-          <h3>💡 Sứ mệnh</h3>
-          <ul>
-            <li>Ứng dụng đổi mới sáng tạo trong ngành Giáo dục</li>
-            <li>Phát triển dụng cụ học tập và học liệu (kể cả học liệu số)</li>
-            <li>Phục vụ giáo dục tiểu học cho trẻ em Việt Nam và trẻ em yếu thế
-              trên thế giới</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>🌱 Giá trị cốt lõi</h3>
-          <ul>
-            <li>Tận tâm với các hoạt động giáo dục</li>
-            <li>Trách nhiệm xã hội</li>
-            <li>Đổi mới sáng tạo trong giáo dục</li>
-            <li>Hợp tác cùng phát triển</li>
-            <li>Không phân biệt trẻ em bất kể nơi sinh sống và ngôn ngữ</li>
-          </ul>
-        </div>
+  <div class="core-wrapper">
+    <button class="core-btn prev">‹</button>
+    <div class="core-slide">
+      <div class="core-card">
+        <div class="icon">🎯</div>
+        <h3>Tầm nhìn</h3>
+        <p>VieLinKit phấn đấu trở thành đối tác đổi mới sáng tạo giáo dục đạt chuẩn quốc tế.</p>
       </div>
-    </section>
+
+      <div class="core-card">
+        <div class="icon">💡</div>
+        <h3>Sứ mệnh</h3>
+        <ul>
+          <li>Ứng dụng đổi mới sáng tạo trong ngành Giáo dục</li>
+          <li>Phát triển dụng cụ học tập và học liệu (kể cả học liệu số)</li>
+          <li>Phục vụ giáo dục tiểu học cho trẻ em Việt Nam và trẻ em yếu thế trên thế giới</li>
+        </ul>
+      </div>
+
+      <div class="core-card">
+        <div class="icon">🌱</div>
+        <h3>Giá trị cốt lõi</h3>
+        <ul>
+          <li>Tận tâm với các hoạt động giáo dục</li>
+          <li>Trách nhiệm xã hội</li>
+          <li>Đổi mới sáng tạo trong giáo dục</li>
+          <li>Hợp tác cùng phát triển</li>
+        </ul>
+      </div>
+    </div>
+    <button class="core-btn next">›</button>
+  </div>
+</section>
 
     <!-- ===== Lý do chọn Khai Minh ===== -->
     <section id="ly-do" class="reasons-section">
@@ -191,17 +196,22 @@
       </div>
     </section>
 
-    <section id="khoa-hoc">
-      <h2 class="section-title">Các khóa học</h2>
-      <div class="grid">
+<section id="khoa-hoc">
+  <h2 class="section-title">Các khóa học</h2>
+
+  <div class="course-container">
+    <button class="course-btn prev" data-arrow="←"></button>
+
+    <div class="course-wrapper">
+      <div class="course-slide">
+        <!-- ========== Mỗi khóa học 1 card ========== -->
         <div class="card">
           <div class="img-box no-image">
             <div class="course-title-center">Toán tư duy</div>
           </div>
           <div class="content">
             <h3>Toán tư duy</h3>
-            <p>Rèn luyện tư duy logic, kỹ năng giải quyết vấn đề qua hoạt động
-              thực tế.</p>
+            <p>Rèn luyện tư duy logic, kỹ năng giải quyết vấn đề qua hoạt động thực tế.</p>
             <a class="more-btn" data-type="course" data-key="toan">Xem thêm</a>
           </div>
         </div>
@@ -212,10 +222,8 @@
           </div>
           <div class="content">
             <h3>Kỹ năng sống</h3>
-            <p>Phát triển khả năng giao tiếp, tự lập và làm việc nhóm hiệu
-              quả.</p>
-            <a class="more-btn" data-type="course" data-key="kynang">Xem
-              thêm</a>
+            <p>Phát triển khả năng giao tiếp, tự lập và làm việc nhóm hiệu quả.</p>
+            <a class="more-btn" data-type="course" data-key="kynang">Xem thêm</a>
           </div>
         </div>
 
@@ -225,8 +233,7 @@
           </div>
           <div class="content">
             <h3>Hội họa</h3>
-            <p>Khơi gợi năng khiếu sáng tạo và cảm nhận thẩm mỹ qua từng nét
-              vẽ.</p>
+            <p>Khơi gợi năng khiếu sáng tạo và cảm nhận thẩm mỹ qua từng nét vẽ.</p>
             <a class="more-btn" data-type="course" data-key="hohoa">Xem thêm</a>
           </div>
         </div>
@@ -237,21 +244,24 @@
           </div>
           <div class="content">
             <h3>Âm nhạc</h3>
-            <p>Giúp trẻ thể hiện cảm xúc, tăng sự tập trung và phát triển toàn
-              diện.</p>
-            <a class="more-btn" data-type="course" data-key="amnhac">Xem
-              thêm</a>
+            <p>Giúp trẻ thể hiện cảm xúc, tăng sự tập trung và phát triển toàn diện.</p>
+            <a class="more-btn" data-type="course" data-key="amnhac">Xem thêm</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <button class="course-btn next" data-arrow="→"></button>
+  </div>
+</section>
+
 
     <!-- ===== Giáo viên ===== -->
     <!-- ===== ĐỘI NGŨ GIÁO VIÊN ===== -->
     <section id="giao-vien">
       <h2 class="section-title">Đội ngũ giáo viên</h2>
       <div class="teacher-container">
-        <button class="teacher-btn prev">‹</button>
+        <button class="teacher-btn prev" data-arrow="←"></button>
         <div class="teacher-wrapper">
           <div class="teacher-slide">
             <!-- Mỗi giáo viên 1 card -->
@@ -267,7 +277,8 @@
             </div>
 
             <div class="teacher-card">
-              <div class="img-box"><img src="./assets/picteacher/NgoKimLan.png"
+              <div class="img-box"><img
+                  src="./assets/picteacher/NgoKimLan.png"
                   alt="Ngô Kim Lan"></div>
               <h3>Ngô Kim Lan</h3>
               <p>Giám đốc – Smart VieLinkit</p>
@@ -280,7 +291,7 @@
                   src="./assets/picteacher/VuThiThuTrang.jpg"
                   alt="Vũ Thị Thu Trang"></div>
               <h3>Vũ Thị Thu Trang</h3>
-              <p>Giáo vụ – Smart VieLinkit</p>
+              <p>Thạc sĩ Giáo dục Tiểu học</p>
               <a class="more-btn" data-type="teacher" data-key="trang">Xem
                 thêm</a>
             </div>
@@ -336,7 +347,8 @@
             </div>
 
             <div class="teacher-card">
-              <div class="img-box"><img src="./assets/picteacher/TaAnhNgoc.jpg"
+              <div class="img-box"><img
+                  src="./assets/picteacher/TaAnhNgoc.jpg"
                   alt="Tạ Ánh Ngọc"></div>
               <h3>Tạ Ánh Ngọc</h3>
               <p>Cử nhân GD Tiểu học</p>
@@ -369,7 +381,7 @@
         </div>
       </div> -->
           </div>
-          <button class="teacher-btn next">›</button>
+          <button class="teacher-btn next" data-arrow="→"></button>
         </div>
       </section>
 
@@ -385,9 +397,8 @@
       <!-- ===== Footer ===== -->
       <footer class="site-footer">
         <div class="footer-container">
-          <div class="footer-column"><h3>Liên hệ</h3><p>Tầng 12, Tòa nhà
-              Viettel, 285 Cách Mạng Tháng 8, Quận 10, TP.HCM</p><p>📞 028 73
-              028 017<br>✉️ info@khaiminh.com</p></div>
+          <div class="footer-column"><h3>Liên hệ</h3><p>118/29 Bạch Đằng, phường Bình Thạnh, TP.HCM</p><p>📞 0833307091
+<br>✉️ info@khaiminh.com</p></div>
           <div class="footer-column"><h3>Sản phẩm</h3><ul><li><a href="#">Toán
                   tư duy</a></li><li><a href="#">Kỹ năng sống</a></li><li><a
                   href="#">Hội họa</a></li><li><a href="#">Âm
@@ -400,68 +411,209 @@
               cùng học sinh trong hành trình phát triển tư duy, sáng tạo và kỹ
               năng toàn diện.</p></div>
         </div>
-        <div class="footer-bottom"><img src="./logoIconKhaMinhFooter.png" alt="Logo"
+        <div class="footer-bottom"><img src="./logoIconKhaMinhFooter.png"
+            alt="Logo"
             class="footer-logo"><p>© 2025 Trung tâm Khai Minh</p></div>
       </footer>
 
-      <script>
-const slides = document.querySelectorAll(".slide");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
-let current = 0;
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle("active", i === index);
-  });
-}
-
-nextBtn.addEventListener("click", () => {
-  current = (current + 1) % slides.length;
-  showSlide(current);
-});
-
-prevBtn.addEventListener("click", () => {
-  current = (current - 1 + slides.length) % slides.length;
-  showSlide(current);
-});
-
-// Tự động chạy
-setInterval(() => {
-  current = (current + 1) % slides.length;
-  showSlide(current);
-}, 6000);
-
-
-</script>
-
-      <script>
-document.getElementById("seeMoreBtn").addEventListener("click", () => {
-  const criteria = document.getElementById("criteriaBox");
-  criteria.classList.toggle("hidden");
-
-  if (!criteria.classList.contains("hidden")) {
-    document.getElementById("seeMoreBtn").textContent = "↑ Thu gọn";
-    criteria.scrollIntoView({ behavior: "smooth", block: "start" });
-  } else {
-    document.getElementById("seeMoreBtn").textContent = "↓ Xem thêm";
-  }
-});
-</script>
-
-      <script>
-// ===== Slider Giáo viên =====
-// ===== Slider Giáo viên =====
+<!-- ===== Slider Banner ===== -->
+<script>
 document.addEventListener("DOMContentLoaded", () => {
-  const slide = document.querySelector(".teacher-slide");
-  const prevBtn = document.querySelector(".teacher-btn.prev");
-  const nextBtn = document.querySelector(".teacher-btn.next");
-  const cards = document.querySelectorAll(".teacher-card");
+  const slides = document.querySelectorAll(".slide");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+
+  nextBtn?.addEventListener("click", () => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  });
+
+  prevBtn?.addEventListener("click", () => {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  });
+
+  // Tự động chạy banner
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 6000);
+});
+</script>
+
+<script>
+// ===== Slider Khóa học =====
+document.addEventListener("DOMContentLoaded", () => {
+  const slide = document.querySelector(".course-slide");
+  const prevBtn = document.querySelector(".course-btn.prev");
+  const nextBtn = document.querySelector(".course-btn.next");
+  const cards = document.querySelectorAll("#khoa-hoc .card");
 
   if (!slide || !cards.length) return;
 
   let index = 0;
-  let visibleCount = 3; // desktop default
+  let visibleCount = 3; // mặc định desktop
+
+  // ===== Cập nhật số lượng hiển thị theo kích thước =====
+  function updateVisibleCount() {
+    if (window.innerWidth < 768) visibleCount = 1;
+    else if (window.innerWidth < 1024) visibleCount = 2;
+    else visibleCount = 3;
+  }
+
+  // ===== Hiển thị slide =====
+  function showSlide() {
+    updateVisibleCount();
+
+    const cardWidth = cards[0].getBoundingClientRect().width + 20; // tính cả khoảng cách
+    const maxIndex = cards.length - visibleCount;
+
+    if (index < 0) index = 0;
+    if (index > maxIndex) index = maxIndex;
+
+    slide.style.transform = `translateX(-${index * cardWidth}px)`;
+    slide.style.transition = "transform 0.4s ease";
+  }
+
+  // ===== Nút bấm =====
+  nextBtn?.addEventListener("click", () => {
+    index++;
+    showSlide();
+  });
+
+  prevBtn?.addEventListener("click", () => {
+    index--;
+    showSlide();
+  });
+
+  // ===== Vuốt cảm ứng trên mobile =====
+  let startX = 0, endX = 0;
+  slide.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  slide.addEventListener("touchmove", (e) => {
+    endX = e.touches[0].clientX;
+  });
+
+  slide.addEventListener("touchend", () => {
+    const diff = endX - startX;
+    if (Math.abs(diff) > 50) {
+      if (diff < 0) index++;
+      else index--;
+      showSlide();
+    }
+  });
+
+  // ===== Cập nhật khi resize =====
+  window.addEventListener("resize", showSlide);
+
+  // ===== Gọi lần đầu =====
+  showSlide();
+});
+
+// ===== Slider Tầm nhìn - Sứ mệnh - Giá trị cốt lõi =====
+document.addEventListener("DOMContentLoaded", () => {
+  const slide = document.querySelector(".core-slide");
+  const prev = document.querySelector(".core-btn.prev");
+  const next = document.querySelector(".core-btn.next");
+  const cards = document.querySelectorAll(".core-card");
+  if (!slide || !cards.length) return;
+
+  let index = 0;
+  let visible = window.innerWidth < 768 ? 1 : 3;
+
+  function update() {
+    const width = cards[0].offsetWidth + 20;
+    const max = cards.length - visible;
+    if (index < 0) index = 0;
+    if (index > max) index = max;
+    slide.style.transform = `translateX(-${index * width}px)`;
+  }
+
+  next.addEventListener("click", () => { index++; update(); });
+  prev.addEventListener("click", () => { index--; update(); });
+  window.addEventListener("resize", update);
+  update();
+});
+// ===== Slider Tầm nhìn - Sứ mệnh - Giá trị cốt lõi =====
+document.addEventListener("DOMContentLoaded", () => {
+  const slide = document.querySelector(".core-slide");
+  const prev = document.querySelector(".core-btn.prev");
+  const next = document.querySelector(".core-btn.next");
+  const cards = document.querySelectorAll(".core-card");
+  if (!slide || !cards.length) return;
+
+  let index = 0;
+  let visible = window.innerWidth < 768 ? 1 : 3;
+
+  function updateVisible() {
+    visible = window.innerWidth < 768 ? 1 : 3;
+  }
+
+  function showSlide() {
+    updateVisible();
+    const cardWidth = cards[0].getBoundingClientRect().width + 20;
+    const maxIndex = cards.length - visible;
+
+    if (index < 0) index = 0;
+    if (index > maxIndex) index = maxIndex;
+
+    slide.style.transform = `translateX(-${index * cardWidth}px)`;
+    slide.style.transition = "transform 0.4s ease";
+  }
+
+  next.addEventListener("click", () => { index++; showSlide(); });
+  prev.addEventListener("click", () => { index--; showSlide(); });
+  window.addEventListener("resize", showSlide);
+
+  // ===== Thêm hỗ trợ vuốt trên mobile =====
+  let startX = 0;
+  let endX = 0;
+
+  slide.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  slide.addEventListener("touchmove", (e) => {
+    endX = e.touches[0].clientX;
+  });
+
+  slide.addEventListener("touchend", () => {
+    const diff = endX - startX;
+    if (Math.abs(diff) > 50) {
+      if (diff < 0) index++; // vuốt sang trái
+      else index--;           // vuốt sang phải
+      showSlide();
+    }
+  });
+
+  // ===== Gọi lần đầu =====
+  showSlide();
+});
+
+</script>
+
+
+<!-- ===== Slider Giáo viên ===== -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector(".teacher-slide");
+  const cards = document.querySelectorAll(".teacher-card");
+  const nextBtn = document.querySelector(".teacher-btn.next");
+  const prevBtn = document.querySelector(".teacher-btn.prev");
+
+  if (!slider || !cards.length) return;
+
+  let index = 0;
+  let visibleCount = 3;
 
   function updateVisibleCount() {
     if (window.innerWidth < 768) visibleCount = 1;
@@ -471,37 +623,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showSlide() {
     updateVisibleCount();
-    const cardWidth = cards[0].offsetWidth + 20; // margin gap
-    const maxIndex = cards.length - visibleCount;
+
+    const cardWidth = cards[0].getBoundingClientRect().width + 20;
+    const totalWidth = cardWidth * cards.length;
+    const wrapperWidth = slider.parentElement.offsetWidth;
+    const maxTranslate = Math.max(0, totalWidth - wrapperWidth);
+
+    const maxIndex = Math.ceil((totalWidth - wrapperWidth) / cardWidth);
     if (index < 0) index = 0;
     if (index > maxIndex) index = maxIndex;
-    slide.style.transform = `translateX(-${index * cardWidth}px)`;
+
+    const translateValue = index * cardWidth;
+    slider.style.transform = `translateX(-${Math.min(translateValue, maxTranslate)}px)`;
   }
 
-  nextBtn.addEventListener("click", () => {
-    index++;
-    showSlide();
-  });
+  nextBtn?.addEventListener("click", () => { index++; showSlide(); });
+  prevBtn?.addEventListener("click", () => { index--; showSlide(); });
 
-  prevBtn.addEventListener("click", () => {
-    index--;
-    showSlide();
+  // Vuốt tay
+  let startX = 0, endX = 0;
+  slider.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+  slider.addEventListener("touchmove", e => endX = e.touches[0].clientX);
+  slider.addEventListener("touchend", () => {
+    const diff = endX - startX;
+    if (Math.abs(diff) > 50) {
+      if (diff < 0) index++;
+      else index--;
+      showSlide();
+    }
   });
 
   window.addEventListener("resize", showSlide);
   showSlide();
 });
-
 </script>
 
-      <!-- ===== JS ===== -->
+<!-- ===== Dữ liệu & Popup (Khóa học + Giáo viên) ===== -->
       <script>
 const courseData = {
   toan: {
     title: "Toán tư duy & Toán tư duy nâng cao",
     schedule: [
       { age: "5 - 6 tuổi", schedule: "Thứ 2,4,6 hoặc 3,5 (8:30–10:00)", note: "Hàng tuần", fee: "700.000đ/tháng" },
-      { age: "6 - 7 tuổi", schedule: "Thứ 2,4 hoặc 3,5 (16:30–18:00)", note: "Hàng tuần", fee: "800.000đ/tháng" },
+      { age: "6 - 7 tuổi", schedule: "Thứ 2,4 hoặc 3,5 (16:30–18:00)", note: "Hàng tuần", fee: "700.000đ/tháng" },
       { age: "8 - 11 tuổi", schedule: "Thứ 2,4,6 hoặc 3,5,7 (16:30–18:00)", note: "Hàng tuần", fee: "1.000.000đ/tháng" },
       { age: "Toán tư duy nâng cao (6–11 tuổi)", schedule: "Thứ 7 & CN (8:30–10:00 hoặc 15:00–16:30)", note: "Hàng tuần", fee: "1.500.000đ/tháng" }
     ]
@@ -524,8 +688,8 @@ const courseData = {
   hohoa: {
     title: "Nghệ thuật – Hội họa",
     schedule: [
-      { age: "6 - 11 tuổi", schedule: "Thứ 2–6 (16:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" },
-      { age: "6 - 11 tuổi", schedule: "Thứ 7 & CN (8:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" }
+      // { age: "6 - 11 tuổi", schedule: "Thứ 2–6 (16:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" },
+      { age: "6 - 11 tuổi", schedule: "Thứ 7 (9:00–10:30)", note: "Hàng ngày", fee: "700.000đ/tháng" }
     ]
   },
   amnhac: {
@@ -569,7 +733,7 @@ const teacherData = {
   trang: {
     title: "Cô Vũ Thị Thu Trang",
     content: `
-      <p><b>Chức vụ:</b> Giáo vụ – Smart VieLinkit</p>
+      <p><b>Chức vụ:</b> Thạc sĩ Giáo dục Tiểu học</p>
       <p><b>Kinh nghiệm:</b> Phụ trách công tác quản lý lớp học, điều phối lịch giảng dạy và hỗ trợ học sinh trong quá trình học tập.</p>
       <p>Cô Trang luôn đảm bảo hoạt động giảng dạy diễn ra suôn sẻ, kết nối giữa phụ huynh và giáo viên hiệu quả.</p>
     `
@@ -697,83 +861,38 @@ document.querySelectorAll(".more-btn").forEach(btn => {
 document.querySelector(".close-btn").onclick = () => modal.style.display = "none";
 window.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
 </script>
-      <script>
-/**
- * Mobile menu toggle robust script
- * - toggle class 'show' on #navMenu when #menuToggle clicked
- * - close menu when a nav link is clicked
- * - close menu when click outside
- * - safe: checks for element existence
- */
+
+<!-- ===== Menu mobile ===== -->
+<script>
 (function () {
   const menuToggle = document.getElementById('menuToggle');
   const navMenu = document.getElementById('navMenu');
+  if (!menuToggle || !navMenu) return;
 
-  if (!menuToggle) {
-    console.warn('menuToggle element not found (id="menuToggle")');
-    return;
-  }
-  if (!navMenu) {
-    console.warn('navMenu element not found (id="navMenu")');
-    return;
-  }
-
-  // Helper: toggle menu
   function setMenu(open) {
     if (open) {
-      navMenu.classList.add('show');    // matches many CSS implementations
-      navMenu.classList.add('open');    // also add 'open' for safety if CSS uses that
-      menuToggle.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden'; // optional: prevent background scroll while menu open
+      navMenu.classList.add('show', 'open');
+      document.body.style.overflow = 'hidden';
     } else {
-      navMenu.classList.remove('show');
-      navMenu.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = ''; // restore
+      navMenu.classList.remove('show', 'open');
+      document.body.style.overflow = '';
     }
   }
 
-  // Toggle on click
   menuToggle.addEventListener('click', (e) => {
     e.stopPropagation();
     const isOpen = navMenu.classList.contains('show') || navMenu.classList.contains('open');
     setMenu(!isOpen);
   });
 
-  // Close when clicking any link inside navMenu
-  navMenu.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      setMenu(false);
-    });
-  });
-
-  // Close when clicking outside the navMenu (on small screens)
+  navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
   document.addEventListener('click', (e) => {
-    // if menu not open, do nothing
-    if (!(navMenu.classList.contains('show') || navMenu.classList.contains('open'))) return;
-
-    // if click is inside navMenu or on menuToggle, ignore
     if (navMenu.contains(e.target) || menuToggle.contains(e.target)) return;
-
-    // otherwise close
     setMenu(false);
   });
-
-  // Optional: close on Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') setMenu(false);
-  });
-
-  // Accessibility defaults
-  menuToggle.setAttribute('role', 'button');
-  menuToggle.setAttribute('aria-controls', 'navMenu');
-  if (!menuToggle.hasAttribute('aria-expanded')) menuToggle.setAttribute('aria-expanded', 'false');
-
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
 })();
 </script>
 
     </body>
   </html>
-
-
-
