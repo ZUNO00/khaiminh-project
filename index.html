@@ -21,30 +21,35 @@
       </div>
     </div>
 
-    <!-- ===== Header ===== -->
-    <header class="main-header">
-      <div class="logo">
-        <img src="./logoIconKhaMinh.png" alt="Trung tâm Khai Minh"
-          class="logo-img">
-      </div>
-      <nav id="navMenu" class="nav-menu">
-        <a href="#gioi-thieu">Giới thiệu</a>
-        <!-- <a href="#gia-tri">Giá trị</a> -->
-        <a href="#su-menh">Sứ mệnh</a>
-        <a href="#khoa-hoc">Khóa học</a>
-        <a href="#giao-vien">Giáo viên</a>
-        <a href="#lien-he">Liên hệ</a>
-        <a href="/dangky.html">Đăng ký</a>
-      </nav>
-      <div class="menu-toggle" id="menuToggle">☰</div>
-    </header>
+<!-- ====== HEADER ====== -->
+<header class="main-header">
+  <div class="header-inner">
+    <div class="header-text">
+      <p class="company-name">Công ty Cổ phần Giáo dục Smart VieLinkit</p>
+      <h1 class="center-name">Trung tâm <span>Khai Minh</span></h1>
+    </div>
+    <img src="./logoIconKhaMinh.png" alt="Logo Khai Minh" class="logo-img" />
+  </div>
+
+  <div class="menu-toggle" id="menuToggle">☰</div>
+  <nav id="navMenu" class="nav-menu">
+    <a href="#gioi-thieu">Giới thiệu</a>
+    <a href="#su-menh">Sứ mệnh</a>
+    <a href="#khoa-hoc">Khóa học</a>
+    <a href="#giao-vien">Giáo viên</a>
+    <a href="#lien-he">Liên hệ</a>
+    <a href="/dangky.html" class="btn-dangky">Đăng ký</a>
+  </nav>
+</header>
+
 
     <!-- ===== Giới thiệu ===== -->
     <section id="gioi-thieu" class="hero-slider">
       <div class="slide active">
         <div class="banner-content">
           <div class="text-box">
-            <h1>Phát triển tư duy & năng khiếu cùng Khai Minh</h1>
+            <h2>Phát triển tư duy & năng khiếu cùng</h1> <h1><strong>Khai
+                Minh</strong></p>
             <p>Giúp trẻ phát triển toàn diện về tư duy, kỹ năng và kiến thức qua
               chương trình “học mà chơi – chơi mà học”.</p>
             <a href="#gioi-thieu" class="btn-primary">Tìm hiểu thêm</a>
@@ -310,7 +315,7 @@
                 <img src="./assets/picteacher/ThayQuy.jpg"
                   alt="Huỳnh Kim Quy">
               </div>
-              <h3>TS Huỳnh Kim Quy</h3>
+              <h3>TS. Huỳnh Kim Quy</h3>
               <p>Cố vấn chuyên môn – Khoa học Giáo dục đặc biệt</p>
               <a class="more-btn" data-type="teacher" data-key="quy">Xem
                 thêm</a>
@@ -323,6 +328,16 @@
               <h3>Trần Thị Hồng</h3>
               <p>Cử nhân GD Tiểu học</p>
               <a class="more-btn" data-type="teacher" data-key="hong">Xem
+                thêm</a>
+            </div>
+
+            <div class="teacher-card">
+              <div class="img-box"><img
+                  src="./assets/picteacher/coKhanh.jpg"
+                  alt="HUỲNH THỊ PHƯƠNG KHANH"></div>
+              <h3>HUỲNH THỊ PHƯƠNG KHANH</h3>
+              <p>Cử nhân GD Tiểu học</p>
+              <a class="more-btn" data-type="teacher" data-key="khanh">Xem
                 thêm</a>
             </div>
 
@@ -349,8 +364,8 @@
             <div class="teacher-card">
               <div class="img-box"><img
                   src="./assets/picteacher/VanThuyBaoChieu.jpg"
-                  alt="Văn Thị Bảo Chiêu"></div>
-              <h3>Văn Thị Bảo Chiêu</h3>
+                  alt="Văn Thụy Bảo Chiêu"></div>
+              <h3>Văn Thụy Bảo Chiêu</h3>
               <p>Cử nhân GD Tiểu học</p>
               <a class="more-btn" data-type="teacher" data-key="chieu">Xem
                 thêm</a>
@@ -373,7 +388,8 @@
               </div>
               <h3>Quách Thị Đoan Trang</h3>
               <p>Cử nhân Giáo dục Tiểu học</p>
-              <button class="more-btn"  data-type="teacher" data-key="doantrang">Xem
+              <button class="more-btn" data-type="teacher"
+                data-key="doantrang">Xem
                 thêm</button>
             </div>
 
@@ -687,7 +703,8 @@ const courseData = {
     schedule: [
       { age: "5 - 6 tuổi", schedule: "Thứ 2,4,6 hoặc 3,5 (8:30–10:00)", note: "Hàng tuần", fee: "700.000đ/tháng" },
       { age: "6 - 7 tuổi", schedule: "Thứ 2,4 hoặc 3,5 (16:30–18:00)", note: "Hàng tuần", fee: "700.000đ/tháng" },
-      { age: "8 - 11 tuổi", schedule: "Thứ 2,4,6 hoặc 3,5,7 (16:30–18:00)", note: "Hàng tuần", fee: "1.000.000đ/tháng" },
+      { age: "8 - 10 tuổi", schedule: "Thứ 2,4,6 hoặc 3,5,7 (16:30–18:00)", note: "Hàng tuần", fee: "1.000.000đ/tháng" },
+      { age: "11 tuổi", schedule: "Thứ 2,4,6 hoặc 3,5,7 (16:30–18:00)", note: "Hàng tuần", fee: "1.200.000đ/tháng" },
       { age: "Toán tư duy nâng cao (6–11 tuổi)", schedule: "Thứ 7 & CN (8:30–10:00 hoặc 15:00–16:30)", note: "Hàng tuần", fee: "1.500.000đ/tháng" }
     ]
   },
