@@ -11,46 +11,206 @@ body {
   background: #fff;
   color: #333;
 }
+/* === RESET === */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Arial", sans-serif; }
+a { text-decoration: none; }
 
-/* ================== TOP BAR ================== */
+/* === TOPBAR === */
 .topbar {
   background: #f57c00;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 6px 40px;
 }
 
-.topbar .left,
-.topbar .right {
+.topbar .left, .topbar .right {
   display: flex;
-  gap: 15px;
   align-items: center;
+  gap: 14px;
 }
 
 .topbar a {
   color: #fff;
-  text-decoration: none;
+  transition: 0.2s;
 }
+.topbar a:hover { text-decoration: underline; }
 
-.topbar a:hover {
-  text-decoration: underline;
-}
-
-/* ===== HEADER ===== */
+/* === HEADER === */
 .main-header {
   background: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 40px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #f57c00;
+  padding: 12px 30px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.header-text {
+  text-align: left;
+}
+
+.company-name {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.center-name {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+}
+.center-name span {
+  color: #f57c00;
+}
+
+.logo-img {
+  width: 85px;
+  height: auto;
+  margin-left: 10px;
+}
+
+/* === MENU === */
+.nav-menu {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-menu a {
+  color: #f57c00;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.nav-menu a:hover {
+  color: #e46f00;
+}
+
+/* .btn-dangky {
+  background: #f57c00;
+  color: #fff !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.btn-dangky:hover {
+  background: #e46f00;
+} */
+
+/* === MOBILE === */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #f57c00;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 2001; /* 👈 đảm bảo luôn nằm trên menu */
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    font-size: 12px;
+    gap: 4px;
+    padding: 5px 10px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 20px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2000;
+  }
+
+  .nav-menu.show {
+    display: flex;
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .nav-menu a {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  /* .btn-dangky {
+    margin-top: 10px;
+    border-radius: 30px;
+    width: 70%;
+    align-self: center;
+  } */
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hiệu ứng trượt nhẹ xuống */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Desktop đẹp và gọn hơn */
+@media (min-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .company-name {
+    font-size: 14px;
+  }
+
+  .center-name {
+    font-size: 26px;
+  }
+
+  .logo-img {
+    width: 90px;
+    margin-top: 0;
+  }
+}
+
 #tam-nhin .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -180,7 +340,7 @@ body {
 
 
 
-.logo-img {
+/* .logo-img {
   height: 50px;
   width: auto;
 }
@@ -206,7 +366,7 @@ body {
   font-size: 28px;
   cursor: pointer;
   color: #f57c00;
-}
+} */
 
 /* ===== MOBILE HEADER ===== */
 @media (max-width: 768px) {
