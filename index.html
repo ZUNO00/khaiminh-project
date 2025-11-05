@@ -254,16 +254,28 @@
 
             <div class="card">
               <div class="img-box no-image">
-                <div class="course-title-center">Âm nhạc</div>
+                <div class="course-title-center">Rèn chữ đẹp</div>
               </div>
               <div class="content">
-                <h3>Âm nhạc</h3>
-                <p>Giúp trẻ thể hiện cảm xúc, tăng sự tập trung và phát triển
-                  toàn diện.</p>
-                <a class="more-btn" data-type="course" data-key="amnhac">Xem
+                <h3>Rèn chữ đẹp</h3>
+                <p>Giúp học sinh viết đúng, viết nhanh và trình bày sạch đẹp, hình thành thói quen cẩn thận – kiên trì trong học tập.</p>
+                <a class="more-btn" data-type="course" data-key="renchu">Xem
                   thêm</a>
               </div>
             </div>
+
+             <div class="card">
+              <div class="img-box no-image">
+                <div class="course-title-center">Tiền tiểu học</div>
+              </div>
+              <div class="content">
+                <h3>Tiền tiểu học</h3>
+                <p>Chuẩn bị cho trẻ 5–6 tuổi những kỹ năng nền tảng trước khi vào lớp 1 – giúp bé không bỡ ngỡ khi chuyển từ mầm non sang tiểu học.</p>
+                <a class="more-btn" data-type="course" data-key="tientieuhoc">Xem
+                  thêm</a>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -333,7 +345,7 @@
 
             <div class="teacher-card">
               <div class="img-box"><img
-                  src="./assets/picteacher/coKhanh.jpg"
+                  src="./assets/picteacher/CoKhanh.jpg"
                   alt="HUỲNH THỊ PHƯƠNG KHANH"></div>
               <h3>HUỲNH THỊ PHƯƠNG KHANH</h3>
               <p>Cử nhân GD Tiểu học</p>
@@ -711,9 +723,9 @@ const courseData = {
   kynang: {
     title: "Kỹ năng sống",
     schedule: [
-      { age: "5 - 6 tuổi", schedule: "Thứ 2,4,6 (8:30–10:00)", note: "Hàng tuần", fee: "350.000đ/tháng" },
-      { age: "6 - 15 tuổi", schedule: "Thứ 7 & CN (8:30–10:00)", note: "Hàng tuần", fee: "700.000đ/tháng" },
-      { age: "Trẻ hòa nhập (6 - 11 tuổi)", schedule: "Thứ 2–6 (8:30–10:00)", note: "Hàng tuần", fee: "2.000.000đ/tháng" }
+      { age: "6 - 18 tuổi", schedule: "Thứ 2,4,6 (8:30–10:00)", note: "Hàng tuần", fee: "350.000đ/tháng" },
+      { age: "Trên 18 tuổi", schedule: "Thứ 7 & CN (8:30–10:00)", note: "Hàng tuần", fee: "700.000đ/tháng" },
+      { age: "Trẻ hòa nhập (6 - 18 tuổi)", schedule: "Thứ 2–6 (8:30–10:00)", note: "Hàng tuần", fee: "2.000.000đ/tháng" }
     ]
   },
   chuDep: {
@@ -727,14 +739,21 @@ const courseData = {
     title: "Nghệ thuật – Hội họa",
     schedule: [
       // { age: "6 - 11 tuổi", schedule: "Thứ 2–6 (16:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" },
-      { age: "6 - 11 tuổi", schedule: "Thứ 7 (9:00–10:30)", note: "Hàng ngày", fee: "700.000đ/tháng" }
+      { age: "6 - 11 tuổi", schedule: "Thứ 7 & CN (9:00–10:30)", note: "Hàng ngày", fee: "700.000đ/tháng" }
     ]
   },
-  amnhac: {
-    title: "Nghệ thuật – Âm nhạc",
+  renchu: {
+    title: "Khoá học rèn chữ đẹp",
     schedule: [
-      { age: "6 - 11 tuổi", schedule: "Thứ 2–6 (16:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" },
-      { age: "6 - 11 tuổi", schedule: "Thứ 7 & CN (8:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" }
+      { age: "6 - 11 tuổi", schedule: "Thứ 2–6 (16:30–18:00)", note: "Hàng ngày", fee: "500.000đ/tháng" },
+      // { age: "6 - 11 tuổi", schedule: "Thứ 7 & CN (8:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" }
+    ]
+  },
+  tientieuhoc: {
+    title: "Khoá học rèn chữ đẹp",
+    schedule: [
+      { age: "5 - 6 tuổi", schedule: "Thứ 2–6 (16:30–18:00)", note: "Hàng ngày", fee: "700.000đ/tháng" },
+      // { age: "6 - 11 tuổi", schedule: "Thứ 7 & CN (8:30–20:30)", note: "Hàng ngày", fee: "700.000đ/tháng" }
     ]
   }
 };
